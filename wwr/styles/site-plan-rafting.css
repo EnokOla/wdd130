@@ -16,9 +16,11 @@
     --paragraph-font: "Montserrat", sans-serif;
 
     --nav-backgroung-color: #5b616a;
-    --nav-link-color: #275DAD;
+    --nav-link-color: #000000;
     --nav-hover-link-color: #9493B4;
     --nav-hover-background-color: #CED3DC;
+
+    --shadow: 10px 5px 5px rgba(20, 20, 20, 0.575);
 }
 
 body {
@@ -61,4 +63,5 @@ nav a:link, nav a:visited {
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+    box-shadow: var(--shadow);
 }
