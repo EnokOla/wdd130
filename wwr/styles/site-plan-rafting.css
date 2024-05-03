@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat+Subrayada:wght@400;700&family=Rubik+Burned&display=swap');
 
 * {
     margin: 0;
@@ -12,7 +12,7 @@
     --accent1-color: #9493B4;
     --accent2-color: #CED3DC;
 
-    --heading-font: "Abril Fatface", serif;
+    --heading-font: "Montserrat Subrayada", sans-serif;
     --paragraph-font: "Montserrat", sans-serif;
 
     --nav-backgroung-color: #5b616a;
