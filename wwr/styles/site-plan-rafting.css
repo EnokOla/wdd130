@@ -12,8 +12,8 @@
     --accent1-color: #9493B4;
     --accent2-color: #CED3DC;
 
-    --heading-font: "Montserrat Subrayada", sans-serif;
-    --paragraph-font: "Montserrat", sans-serif;
+    --heading-font: "Montserrat Subrayada", sans-serif, serif;
+    --paragraph-font: "Montserrat", sans-serif, serif;
 
     --nav-backgroung-color: #5b616a;
     --nav-link-color: #000000;
