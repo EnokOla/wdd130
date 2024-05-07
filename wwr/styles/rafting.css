@@ -110,5 +110,10 @@ header nav a:hover {
     float: right;
 }
 
-
+.social-links img {
+    width: 50px;
+}
+.social-links a{
+    text-decoration: none;
+}
 
