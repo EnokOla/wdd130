@@ -7,19 +7,19 @@
 }
 
 :root {
-    --primary-color: #363a3f;
-    --secondary-color: #275DAD;
-    --accent1-color: #9493B4;
-    --accent2-color: #CED3DC;
+    --primary-color: #30343F;
+    --secondary-color: #FAFAFF;
+    --accent1-color: #273469;
+    --accent2-color: #1E2749;
 
     /* --heading-font: "Montserrat Subrayada", sans-serif; */
     --heading-font: "Roboto", sans-serif;
     --paragraph-font: "Montserrat", sans-serif;
 
-    --nav-background-color: #5b616a;
-    --nav-link-color: #000000;
-    --nav-hover-link-color: #9493B4;
-    --nav-hover-background-color: #CED3DC;
+    --nav-background-color: #1E2749;
+    --nav-link-color: #FAFAFF;
+    --nav-hover-link-color: #E4D9FF;
+    --nav-hover-background-color: #273469;
 
     --shadow: 10px 5px 5px rgba(20, 20, 20, 0.575);
 }
@@ -49,7 +49,9 @@ header {
 }
 
 header img {
-    width: 150px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
 }
 
 header nav {
@@ -82,45 +84,52 @@ header nav a:hover {
 
 .hero-background {
     display: block;
+    object-fit: contain;
     width: 100%;
-    height: auto;
 }
 
 .hero h1 {
     position: absolute;
     top: 10%;
     width: 100%;
-    background: #00000077;
+    padding: 1rem;
+    background: #30343FC9;
     text-align: center;
-    color: var(--accent1-color);
+    color: var(--nav-link-color);
 }
 
 .hero article {
     position: absolute;
-    top: 25%;
-    left: 20%;
-    width: 60%;
-    background: #00000077;
-
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    background: #30343FC9;
 }
 
 .hero article p {
     padding: 1rem;
-    color: var(--accent1-color);
+    color: var(--nav-link-color);
 }
 
 .hero article img {
     width: 200px;
+    height: 200px;
+    padding: 1rem;
+    object-fit: cover;
+    border: 1px solid #FAFAFF99;
     float: right;
 }
 
 
 .history {
-    margin: 1rem auto;
+    padding: 1rem 3rem;
+    background-color: var(--primary-color);
+    color: var(--nav-link-color);
 }
 
 .history h2 {
     text-align: center;
+    color: var(--nav-link-color);
 }
 
 .adventure {
@@ -151,7 +160,7 @@ figure {
   }
   
 figcaption {
-    background-color: #222;
+    background-color: var(--primary-color);
     color: #fff;
     font: italic smaller sans-serif;
     padding: 3px;
@@ -163,6 +172,8 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: var(--nav-background-color);
+    color: var(--secondary-color);
 }
 
 footer div {
