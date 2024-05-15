@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,16 +9,25 @@
 nav {
     background-color: steelblue;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
     padding: 20px;
+    font-family: "Montserrat", sans-serif;;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
 }
 
 h1 {
     color: steelblue;
+    border-bottom: 1px solid steelblue;
 }
 
 main img {
@@ -30,16 +41,16 @@ main img {
 
 p {
     padding: 0;
-}
-
-main {
-    max-width: 840px;
+    margin-top: 5px;
+    font-family: "Montserrat", sans-serif;;
 }
 
 aside {
     width: 20rem;
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
@@ -52,6 +63,20 @@ aside h2 {
     top: 118px;
     left: 65px;
     color: #fff;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+main img{
+    margin: 0.5rem;
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 footer {
@@ -67,4 +92,10 @@ footer {
     padding: 1rem;
     background: #ddd;
     color: #000;
+    list-style: none;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
