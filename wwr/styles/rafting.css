@@ -164,7 +164,7 @@ header nav a:hover {
     justify-content: space-evenly;
     background: linear-gradient(rgba(0, 0, 0, 0), var(--primary-color), var(--primary-color), var(--primary-color));
     position: absolute;
-    bottom: -30%;
+    bottom: -20%;
 }
 
 .flex-content .hero-containers {
