@@ -369,3 +369,41 @@ button:hover {
     background-color: var(--nav-hover-background-color);
     color: var(--nav-hover-link-color);
 }
+
+.offices {
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.offices h2 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.offices-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.offices-content div {
+    flex-basis: 50%;
+}
+
+.text-box {
+    text-align: center;
+    padding: 2rem;
+}
+
+.text-box h3 {
+    color: var(--nav-background-color);
+}
+
+.text-box ul li{
+    list-style: none;
+    line-height:2rem;
+}
+
+.offices-content img {
+    width: 100%;
+}
