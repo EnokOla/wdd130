@@ -425,7 +425,7 @@ button:hover {
     background-color: var(--primary-color);
 }
 
-.employee-body h2, p {
+.employee-body h2 {
     color: var(--nav-link-color);
     padding: 0;
 }
