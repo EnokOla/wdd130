@@ -230,8 +230,9 @@ footer {
     color: var(--secondary-color);
 }
 
-footer div {
-    width: 140px;
+footer div a {
+    color: var(--nav-hover-link-color);
+    text-decoration: none;
 }
 
 .social-links {
@@ -330,15 +331,25 @@ legend {
 .form-flex {
     display: flex;
     justify-content: space-between;
+    padding: 1rem 0;
 }
 
 .form-item {
     display: grid;
     flex-basis: 45%;
-    align-items: center;
 }
 
-input, textarea {
+.column-2 {
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+}
+
+label {
+    /* text-align: right; */
+    padding: 0.5rem 0;
+}
+
+input, textarea, select {
     padding: 0.5rem 0;
     font-size: 1rem;
     border-radius: 2px;
@@ -347,13 +358,12 @@ input, textarea {
     background-color: var(--nav-hover-link-color);
 }
 
-input, textarea:focus {
+input, select, textarea:focus {
     outline: none;
 }
 
-.column-2 {
-    grid-template-columns: 1fr 2fr;
-    gap: 1rem;
+.newsletter {
+    padding: 1rem 0;
 }
 
 button {

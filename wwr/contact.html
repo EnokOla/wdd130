@@ -88,29 +88,58 @@
             </div>
         </section>
         <section class="contact-form">
-            <h2>Get in touch with us today!</h2>
+            <h2>Join Our Community Today!</h2>
             <form>
                 <fieldset>
-                    <legend>Send Us a Message</legend>
+                    <legend>Join our newsletter</legend>
                     <div class="form-flex">
-                        <div class="form-item column-2">
+                        <div class="form-item column-">
                             <label for="fullname">Full Name:</label>
                             <input type="text" name="fullname" id="fullname">
                         </div>
-                        <div class="form-item column-2">
+                        <div class="form-item column-\">
                             <label for="useremail">Email:</label>
                             <input type="email" name="useremail" id="useremail">
                         </div>
                     </div>
-                    <label for="message">What is your message?</label>
-                    <textarea name="message" id="message" rows="3"></textarea>
+                    <div class="form-item "                                              >
+                        <label>Preferred Contact Method:</label>
+                        <div>
+                            <input type="radio" id="contactEmail" name="contactMethod" value="email" required>
+                            <label for="contactEmail">Email</label>
+                            <input type="radio" id="contactPhone" name="contactMethod" value="phone" required>
+                            <label for="contactPhone">Phone</label>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to our newsletter</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Send us a Message!</legend>
+                    <div class="form">
+                        <label for="purpose">Message Purpose:</label>
+                        <select id="purpose" name="purpose" required>
+                            <option value="" selected disabled>Choose One...</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="inquiry">Inquiry</option>
+                            <option value="support">Support</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="message">Send us a message?</label>
+                        <textarea name="message" id="message" rows="3"></textarea>
+                    </div>
                 </fieldset>
                 <button type="submit">Send</button>
             </form>
         </section>
     </main>
     <footer>
-        <div></div>
+        <div>
+            <a class="social-links" href="https://app.moqups.com/P7RpzZ6rvdyySipdmL5Qz9ahEE5gEYZU/view/page/ad12de680">👉 Wireframe Design</a>
+        </div>
         <p>🌊 © 2024 | Wave Adventures | Enoch Olayemi 🌊</p>
         <nav class="social-links">
             <!-- <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a> -->
