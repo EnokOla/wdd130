@@ -294,6 +294,7 @@ footer div {
 
 aside iframe {
     width: 100%;
+    border: none;
 }
 
 .contact-form {
