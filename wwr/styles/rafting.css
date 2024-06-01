@@ -26,7 +26,6 @@
 
 body {
     font-family: var(--paragraph-font);
-    /* max-width: 1200px; */
     margin: auto;
     padding: 20px;
 }
@@ -34,10 +33,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-}
-
-p {
-    padding: 25px;
 }
 
 header {
@@ -202,7 +197,6 @@ header nav a:hover {
     background-color: var(--nav-hover-link-color);
     text-align: center;
     padding: 1.5rem;
-    /* border-radius: 0.5rem; */
 }
 
 
@@ -237,12 +231,11 @@ header nav a:hover {
 }
 
 figure {
-    /* border: thin #c0c0c0 solid; */
     display: flex;
     flex-flow: column;
     padding: 5px;
     margin: auto;
-  }
+}
   
 figcaption {
     background-color: var(--primary-color);
@@ -377,14 +370,12 @@ legend {
 }
 
 label {
-    /* text-align: right; */
     padding: 0.5rem 0;
 }
 
 input, textarea, select {
     padding: 0.5rem 0;
     font-size: 1rem;
-    /* border-radius: 2px; */
     border: none;
     border-bottom: 1px solid var(--nav-hover-background-color);
     background-color: var(--nav-hover-link-color);
@@ -394,16 +385,11 @@ input, select, textarea:focus {
     outline: none;
 }
 
-.newsletter {
-    padding: 1rem 0;
-}
-
 button {
     margin: auto;
     background-color: var(--nav-background-color);
     color: var(--nav-link-color);
     border: none;
-    /* border-radius: 0.5rem; */
     padding: 0.75rem 2rem;
     font-size: 1.2rem;
 }
@@ -416,6 +402,7 @@ button:hover {
 .offices {
     margin: 2rem 0 ;
     width: 100%;
+    text-align: center;
 }
 
 .offices h2 {
@@ -434,11 +421,6 @@ button:hover {
     flex-basis: 50%;
 }
 
-.text-box {
-    text-align: center;
-    padding: 2rem;
-}
-
 .text-box h3 {
     color: var(--nav-background-color);
 }
@@ -450,6 +432,7 @@ button:hover {
 
 .offices-content img {
     width: 100%;
+    object-fit: cover;
 }
 
 .employee-body {
@@ -479,11 +462,6 @@ button:hover {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    /* border-radius: 0.5rem; */
-}
-.caption {
-    margin-top: 10px;
-    font-size: 1.2em;
 }
 
 .trips {
@@ -527,9 +505,6 @@ button:hover {
     display: flex;
     top: 0;
     transition: 0.25s;
-}
-
-.trip-figure {
     padding-top: 100px;
 }
 
@@ -546,10 +521,6 @@ button:hover {
     display: flex;
     justify-content: space-between;
     gap:  1rem;
-}
-
-.testimonial {
-    padding: 1rem 0;
 }
 
 .testimonial h4, p {
