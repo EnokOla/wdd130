@@ -26,7 +26,7 @@
 
 body {
     font-family: var(--paragraph-font);
-    max-width: 1000px;
+    /* max-width: 1200px; */
     margin: auto;
     padding: 20px;
 }
@@ -86,6 +86,7 @@ header nav a:hover {
     display: block;
     object-fit: cover;
     width: 100%;
+    height: 79vh;
 }
 
 .hero h1 {
@@ -98,7 +99,27 @@ header nav a:hover {
     color: var(--nav-link-color);
 }
 
-.hero2 {
+.hero-message{
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    padding: 1rem;
+    background: #30343FC9;
+    text-align: center;
+    font-size: large;
+    color: var(--nav-link-color);
+}
+
+.hero-message h1 {
+    position: static;
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 0;
+    background: none;
+}
+
+
+.hero2, .hero3 {
     position: relative;
     width: 100%;
     height: 50vh;
@@ -114,6 +135,16 @@ header nav a:hover {
 .hero2 h1 {
     position: absolute;
     top: 10%;
+    width: 100%;
+    padding: 1rem;
+    background: #30343FC9;
+    text-align: center;
+    color: var(--nav-link-color);
+}
+
+.hero3 h1 {
+    position: absolute;
+    top: 40%;
     width: 100%;
     padding: 1rem;
     background: #30343FC9;
@@ -138,9 +169,9 @@ header nav a:hover {
 
 .hero article {
     position: absolute;
-    top: 30%;
-    left: 10%;
-    width: 80%;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
     background: #30343FC9;
 }
 
@@ -171,7 +202,7 @@ header nav a:hover {
     background-color: var(--nav-hover-link-color);
     text-align: center;
     padding: 1.5rem;
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
 }
 
 
@@ -187,7 +218,7 @@ header nav a:hover {
 }
 
 .adventure {
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .adventure h2 {
@@ -206,7 +237,7 @@ header nav a:hover {
 }
 
 figure {
-    border: thin #c0c0c0 solid;
+    /* border: thin #c0c0c0 solid; */
     display: flex;
     flex-flow: column;
     padding: 5px;
@@ -223,6 +254,7 @@ figcaption {
 
 footer {
     width: 100%;
+    padding: 1rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -352,7 +384,7 @@ label {
 input, textarea, select {
     padding: 0.5rem 0;
     font-size: 1rem;
-    border-radius: 2px;
+    /* border-radius: 2px; */
     border: none;
     border-bottom: 1px solid var(--nav-hover-background-color);
     background-color: var(--nav-hover-link-color);
@@ -371,7 +403,7 @@ button {
     background-color: var(--nav-background-color);
     color: var(--nav-link-color);
     border: none;
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
     padding: 0.75rem 2rem;
     font-size: 1.2rem;
 }
@@ -395,6 +427,7 @@ button:hover {
     width: 100%;
     display: flex;
     align-items: center;
+    flex-direction: row-reverse;
 }
 
 .offices-content div {
@@ -430,7 +463,7 @@ button:hover {
     padding: 0;
 }
 
-.container {
+.employee-container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -446,9 +479,145 @@ button:hover {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
 }
 .caption {
     margin-top: 10px;
     font-size: 1.2em;
+}
+
+.trips {
+    width: 100%;
+    color: var(--nav-link-color);
+    background-color: var(--primary-color);
+    padding: 2rem 1.5rem;
+}
+
+.trips h2 {
+    color: var(--nav-link-color);
+    text-align: center;
+}
+
+.trips-block {
+    gap: 1.5rem;
+    display: grid;
+    padding: 1rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.trips-block div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.trips-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.trip-figure {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#00000000, #1E2749ff);
+    color: #fff;
+    position: absolute;
+    display: flex;
+    top: 0;
+    transition: 0.25s;
+}
+
+.trip-figure {
+    padding-top: 100px;
+}
+
+.trips-block img{
+    width: 100%;
+}
+
+.review-container {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    gap:  1rem;
+}
+
+.testimonial {
+    padding: 1rem 0;
+}
+
+.testimonial h4, p {
+    padding: 0.6rem;
+}
+
+.rating {
+    border: 1px solid var(--primary-color);
+    border-radius: 2rem;
+    width: 150px;
+    padding: .5rem;
+    margin: auto;
+    color: goldenrod;
+}
+
+.sponsors {
+    background: #E4D9FF;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.sponsor-flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.overlay-block {
+    position: relative;
+    height: 150px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1E274950;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.overlay:hover {
+    background-color: #1E274900;
+}
+
+.overlay-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.call-to-action {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.call-to-action a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1E2749;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
 }
